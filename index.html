@@ -35,7 +35,13 @@
                 </iframe>
             </iframe>
         </div>
-
+        <div>
+        	<input type="text" ng-model="yourName" placeholder="Enter your name here"> 
+        	<br />
+        	<input type="text" ng-model="yourEmplID" placeholder="Enter your employee ID here.">
+        	<br /> 
+        	<p>Hello, {{yourName}}! Thank you for entering your employee ID. You entered {{yourEmplID}}. Please note that we do not collect any of this information on purpose at this time. These form elements are here just to make sure angular js is working on your browser. Thank you for participating in this test.</p>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
