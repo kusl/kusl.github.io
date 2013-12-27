@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    kus -- lead -- @9034725985
 
 # THANKS
 
-    <name>
+    The teams at http://html5boilerplate.com and http://angularjs.org 
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    Normalize.css, jQuery, Modernizr, Angular.JS
