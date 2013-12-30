@@ -44,11 +44,13 @@
         </div>
         
         <form autocomplete="off">
-        	<input type="text" autocomplete="off" data-ng-model="yourName" placeholder="Enter your name here"> 
+        	<input type="text" autocomplete="off" data-ng-model="yourName" placeholder="Full legal name"> 
         	<br />
-        	<input type="number" autocomplete="off" data-ng-model="yourEmplID" placeholder="Enter your employee ID here. Ignore any non-numeric input.">
+        	<input type="number" autocomplete="off" data-ng-model="yourEmplID" placeholder="Employee ID (digits only)">
+        	<input type="number" autocomplete="off" data-ng-model="yourQuantity" placeholder="Quantity">
+        	<input type="number" autocomplete="off" data-ng-model="yourCostPerItem" placeholder="Cost per unit">
         	<br /> 
-        	<p>Hello, {{yourName}}! Thank you for entering your employee ID. You entered {{yourEmplID}}. Please note that we do not collect any of this information on purpose at this time. These form elements are here just to make sure angular js is working on your browser. Thank you for participating in this test.</p>
+        	<p>Hello, {{yourName}}! Thank you for entering your employee ID. You entered {{yourEmplID}}. Please note that we do not collect any of this information on purpose at this time. These form elements are here just to make sure angular js is working on your browser. Thank you for participating in this test. Your total cost is {{yourQuantity * yourCostPerItem | currency}} for {{yourQuantity}} at the rate of {{yourCostPerItem}}.</p>
         </form>
 
         <div class="google-maps">
